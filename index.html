@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sally Resume</title>
+</head>
+<body>
+    <div id="application-root"></div>
+
+    <script
+        src="https://unpkg.com/react@16/umd/react.development.js">
+    </script>
+    <script
+        src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+    </script>
+    <script
+        src="https://unpkg.com/babel-standalone@6/babel.min.js">
+    </script>
+
+    <script type="text/babel">
+    
+
+    function App(props) {
+        return (
+            <main>   
+                {props.children}
+            </main>
+        );
+    }
+
+    
+    ReactDOM.render(
+        <App className='my-class'>
+            <header>
+                <h1> Sally Student Resume </h1>
+            </header>
+            
+            <section>
+                <h3> Contact Info </h3>
+                <address>
+                    <ul> 
+                        <li>Sally Fake</li>
+                        <li>SallyFake@fake.com</li>
+                        <li>(555)555-5555</li>
+                        <img src= "https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" alt="Flower"/>
+                    </ul>
+                </address>
+            </section>
+
+            <section>
+            <h3> Education </h3>
+                <ul>
+                    <li>Masters Degree at University of Fake</li>
+                </ul>
+            </section>
+
+            <section>
+            <h3> Experience </h3>
+                <ul>
+                    <li> Facebook, Software Engineer, 2014-2015
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae veritatis sed laborum, accusantium ut dolore asperiores ea enim, hic fuga corporis? Id cupiditate, voluptatibus veniam doloribus consectetur quia! Quae, eveniet? </p></li>
+                    <li> Google, Software Engineer, 2016-present
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae veritatis sed laborum, accusantium ut dolore asperiores ea enim, hic fuga corporis? Id cupiditate, voluptatibus veniam doloribus consectetur quia! Quae, eveniet?</p></li>
+                </ul>
+            </section>
+        </App>,
+        document.querySelector('#application-root')
+    );
+    </script>
+    
+</body>
+</html>
